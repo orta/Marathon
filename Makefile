@@ -10,7 +10,7 @@ build:
 install_bin:
 	mkdir -p $(PREFIX)/bin
 	mv .build/Release/Marathon .build/Release/$(INSTALL_NAME)
-	install -d .build/Release/$(INSTALL_NAME) $(PREFIX)/bin
+	install .build/Release/$(INSTALL_NAME) $(PREFIX)/bin
 
 uninstall:
 	rm -f $(INSTALL_PATH)
